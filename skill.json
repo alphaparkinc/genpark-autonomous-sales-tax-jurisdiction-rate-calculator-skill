@@ -1,0 +1,41 @@
+{
+  "name": "genpark-autonomous-sales-tax-jurisdiction-rate-calculator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous e-commerce sales tax calculation, multi-state economic nexus detector, and automated jurisdiction remittance engine.",
+  "author": "genpark",
+  "category": "fintech",
+  "tags": [
+    "sales-tax",
+    "economic-nexus",
+    "tax-compliance",
+    "multi-jurisdiction",
+    "numeral"
+  ],
+  "inputs": {
+    "cart_subtotal_usd": {
+      "type": "number"
+    },
+    "ship_to_address": {
+      "type": "object"
+    },
+    "origin_state": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "tax_calculation_id": {
+      "type": "string"
+    },
+    "effective_tax_rate_pct": {
+      "type": "number"
+    },
+    "sales_tax_due_usd": {
+      "type": "number"
+    },
+    "nexus_determination": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
